@@ -1,5 +1,6 @@
 challenge part 1 subtask 2<br>
 function is a set of code whereas method is the properties of objects.
+
 assignment part 1 subtask 2<br>
 #function with return value
 function returnFunction(){
