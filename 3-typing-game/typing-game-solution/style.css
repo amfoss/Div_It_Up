@@ -1,0 +1,52 @@
+body{
+    background-color: 
+    
+    #323437;
+}
+
+h1{
+    color: 
+    #e9b90e;
+    text-align: center;
+}
+
+.cont{
+     position: relative;
+     top: 100px;
+}
+
+#congrat{
+    border-width: 8px;
+    background-color: #800020;
+    border-color: black;
+}
+
+#congo{
+    font-family: sans-serif;
+    font-weight: bold;
+    color:#e9b90e;
+}
+#msg{
+    color: #ffffff; 
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    color: #d1d0c5;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#message{
+    color:#800020;
+    font-weight: 700;
+}
+.highlight{
+    background-color: #c5a327;
+}
+
+.error{
+    background-color: lightcoral;
+    border:red;
+}
