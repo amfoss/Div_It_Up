@@ -51,7 +51,7 @@ This PR is the solution to the 'js basics'  #<issue number>
   <img src="./images/label.png" alt="image">
 </div>
 
-10. **Assign < JATAYU000 > as the reviewer for your PR**
+10. **Add < JATAYU000 > as the reviewer for your PR**
 
 <div align="left">
   <img src="./images/Reviewer.png" alt="image">
