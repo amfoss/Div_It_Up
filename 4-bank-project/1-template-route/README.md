@@ -1,9 +1,5 @@
 # Build a Banking App Part 1: HTML Templates and Routes in a Web App
 
-## Pre-Lecture Quiz
-
-[Pre-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/41)
-
 ### Introduction
 
 Since the advent of JavaScript in browsers, websites are becoming more interactive and complex than ever. Web technologies are now commonly used to create fully functional applications that runs directly into a browser that we call [web applications](https://en.wikipedia.org/wiki/Web_application). As Web apps are highly interactive, users do not want to wait for a full page reload every time an action is performed. That's why JavaScript is used to update the HTML directly using the DOM, to provide a smoother user experience.
@@ -294,10 +290,6 @@ Now try to use the back and forward buttons of your browsers, and check that the
 ## 🚀 Challenge
 
 Add a new template and route for a third page that shows the credits for this app.
-
-## Post-Lecture Quiz
-
-[Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/42)
 
 ## Review & Self Study
 

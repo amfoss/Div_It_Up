@@ -25,3 +25,7 @@ This lesson assumes you're familiar with the following concepts:
 
 [Creating a typing game by using event driven programming](./typing-game/README.md)
 
+## Assignment
+
+Your Assignment project directory should be added for the pr. Also add a solution.md Which documents how you made the project resources you used.
+

@@ -1,10 +1,5 @@
 # JavaScript Basics: Methods and Functions
 
-
-## Pre-Lecture Quiz
-
-[Pre-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/9)
-
 When we think about writing code, we always want to ensure our code is readable. While this sounds counterintuitive, code is read many more times than it's written. One core tool in a developer's toolbox to ensure maintainable code is the **function**.
 
 [![Methods and Functions](https://img.youtube.com/vi/XgKsD6Zwvlc/0.jpg)](https://youtube.com/watch?v=XgKsD6Zwvlc "Methods and Functions")
@@ -180,10 +175,6 @@ You've now seen we have three ways to pass a function as a parameter and might b
 ## 🚀 Challenge
 
 Can you articulate in one sentence the difference between functions and methods? Give it a try!
-
-## Post-Lecture Quiz
-
-[Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/10)
 
 ## Review & Self Study
 
