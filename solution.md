@@ -101,3 +101,57 @@ studentsWhoPass.push(allStudents[i]);
 }
 }
 console.log(studentsWhoPass);
+```
+### Challenge
+```
+// Code using logical operators
+let int;
+let x=10;
+if (x > 0) {
+        int = "Positive";
+    } else if (x < 0) {
+        int = "Negative";
+    } else {
+        int = "Zero";
+    }
+console.log(int);
+```
+```
+// Code using ternary expression
+let x=10;
+let int = x>0 ? "Positive" : (x<0 ? "Negative" : "zero");
+console.log(int);
+```
+
+I prefer to use ternary expression as the complexity and lines of the code decreases compared to using if....else
+
+## Arrays-loops
+### Assignment 
+The code for the givem assignment is :
+```
+for(let i=1; i<=20; i=i+3){
+      console.log(i);
+}
+```
+Output in console:
+1  
+4  
+7  
+10  
+13  
+16  
+19 
+### Challenge
+The rewritten code for the above assignment in for-of loop is:
+```
+const numbers = [];
+for (let i = 1; i <= 20; i += 3) {
+    numbers.push(i);
+}
+
+for (let num of numbers) {
+    console.log(num);
+}
+```
+Output is same.
+
