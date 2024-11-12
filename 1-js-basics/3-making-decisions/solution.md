@@ -21,7 +21,7 @@ my prefered syntax would be ternary if it is a expression with two conditions an
 
 # assignment subtask 3 part 1
 
-let allStudents = ['A','B-',1,4,5,2];<br>
+``let allStudents = ['A','B-',1,4,5,2];<br>
 let studentsWhoPass = [];<br>
 let pass=["A","A-","B","B-","C"];<br>
 for(let i=0;i<allStudents.length;i++){<br>
@@ -50,4 +50,4 @@ for(let i=0;i<allStudents.length;i++){<br>
         }<br>
     }<br>
 }<br>
-console.log(studentsWhoPass)<br>	
+console.log(studentsWhoPass)<br>``
