@@ -138,7 +138,9 @@ firstelem.style.borderColor = "yellow";
 
 document.addEventListener('keydown', (ev) => {  });
 -This is a command to add an event listener for a action user do .here i have used it for the keydown function.
- 
+
+LocalStorage:
+
 localStorage in JavaScript allows web applications to store data locally within the user's browser – with no expiration date.
 The data isn't deleted when the browser is closed, and is available when the browser is opened again.
 
@@ -153,5 +155,7 @@ localStorage.setItem("previd", bbb.id);
 const ement=document.querySelector(".block")
 -In my work i have used this command to access a element using its class name.
 ```
+
+**Winning dialog**
 
 ![image](https://github.com/user-attachments/assets/2c07092f-9d1b-4a52-9fd6-197a87fe7ffd)
