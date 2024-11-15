@@ -24,12 +24,14 @@ let wordIndex = 0;
 // the starting time
 let startTime = Date.now();
 let eventhand = false;
+let tptp=false;
 // page elements
 const quoteElement = document.getElementById('quote');
 const messageElement = document.getElementById('message');
 const typedValueElement = document.getElementById('typed-value');
 const Congopage =document.getElementById('congo')
 const cpage=document.getElementById('cpage')
+const highscore=document.getElementById('highscore')
 typedValueElement.disabled=true;
 
 // at the end of script.js
@@ -75,9 +77,19 @@ if(!eventhand){
         if (typedValue === currentWord && wordIndex === words.length - 1) {
         // end of sentence
         // Display success
+        const hehe=localStorage.getItem("highScore");
         const elapsedTime = new Date().getTime() - startTime;
         const message = `CONGRATULATIONS! You finished in ${elapsedTime / 1000} seconds.`;
+        if(!tptp){
+            localStorage.setItem("highScore", elapsedTime/1000);
+            tptp=true;
+        }
+        if(elapsedTime <parseInt(hehe)){
+            localStorage.setItem("highScore", elapsedTime/1000);
+        }
+        const high="High score :"+localStorage.getItem("highScore");
         Congopage.innerText = message;
+        highscore.innerText = high;
         cpage.removeAttribute("hidden");
         document.getElementById('hidbut').addEventListener('click', () => {
             cpage.setAttribute("hidden", "hidden");
