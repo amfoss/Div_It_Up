@@ -59,3 +59,4 @@ This PR is the solution to the 'js basics'  #<issue number>
 
 
 9. **Only the best solution PR for each issue will be merged into this repository.**
+
