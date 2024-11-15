@@ -47,7 +47,7 @@ document.addEventListener('keypress', (ev) => {
 
         
     }
-    if(score==21){
+    if(scoree==21){
         const cpage=document.getElementById('cpage');
         const ement=document.querySelector(".block")
         cpage.removeAttribute("hidden");
