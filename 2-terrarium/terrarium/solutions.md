@@ -114,21 +114,53 @@ h2{
 
 .key{
     text-align: left;
-    /* background-color: violet; */
     width: 20%;
     position: relative;
     box-sizing: border-box;
 }
 .value{
-    /* background-color: red; */
     text-align: left;
-    /* right: 20%; */
     width: 20%;
     margin-left: 30%;
     position: absolute;
     box-sizing: border-box;
 }
 ```
+# 2. Intro to css
+### Challenge
+To restyle the terrarium using either Flexbox, modify the html and [css](https://github.com/Nishthajain7/div-it-up/blob/Terrarium/2-terrarium/terrarium/flex.css) as follows
+```
+<div id="page">
+
+        <div class="container" id="left-container">
+            <div class="plant-holder">
+                <img class="plant" src="../images/plant1.png" id="plant1" alt="plant1">
+            </div>
+            <!-- add remaining plants  -->
+        </div>
+
+        <div id="terrarium">
+            <div class="jar-top"></div>
+            <div class="jar-walls">
+                <div class="jar-glossy-long"></div>
+                <div class="jar-glossy-short"></div>
+            </div>
+            <div class="dirt"></div>
+            <div class="jar-bottom"></div>
+        </div>
+
+        <div class="container" id="right-container">
+            <div class="plant-holder">
+                <img class="plant" src="../images/plant8.png" id="plant8" alt="plant8">
+            </div>
+
+            <!-- add remaining plants  -->
+        </div>
+
+        
+</div>
+```
+
 
 # 3. Introduction to DOM and JS Closures
 ### Assignment
@@ -144,3 +176,4 @@ When typing in a Google Docs document, each piece of text is stored as a text no
  - Absolute - An element with this type of positioning is not affected by other elements and it doesn’t affect other elements.
  - Fixed - This might be used for something like a navigation bar that you want to remain visible at all times regardless of the pages scroll position. The concern with fixed positioning is that it can cause situations where the fixed element overlaps content such that is is inaccessible
  - Relative - If you set position: relative; on an element but no other positioning attributes (top, left, bottom or right), it will have no effect on it’s positioning at all. But if you do give it some other positioning attribute, say, top: 10px;, it will shift its position 10 pixels down from where it would normally be
+

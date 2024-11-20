@@ -8,23 +8,21 @@ h1{
     padding-top: 3%;
 }
 
-#left-container {
+.container {
     background-color: #eee;
     width: 15%;
-    left: 0px;
     top: 0px;
     position: absolute;
     height: 100%;
     padding: 10px;
 }
+
+#left-container{
+    left: 0px;
+}
+
 #right-container {
-	background-color: #eee;
-	width: 15%;
 	right: 0px;
-	top: 0px;
-	position: absolute;
-	height: 100%;
-	padding: 10px;
 }
 
 .plant-holder {
