@@ -1,9 +1,5 @@
 # Terrarium Project Part 2: Introduction to CSS
 
-## Pre-Lecture Quiz
-
-[Pre-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/17)
-
 ### Introduction
 
 CSS, or Cascading Style Sheets, solve an important problem of web development: how to make your web site look nice. Styling your apps makes them more usable and nicer-looking; you can also use CSS to create Responsive Web Design (RWD) - allowing your apps to look good no matter what screen size they are displayed on. CSS is not only about making your app look nice; its spec includes animations and transforms that can enable sophisticated interactions for your apps. The CSS Working Group helps maintain current CSS specifications; you can follow their work at [World Wide Web Consortium's site](https://www.w3.org/Style/CSS/members).
@@ -253,10 +249,6 @@ Add a 'bubble' shine to the left bottom area of the jar to make it look more gla
 ![finished terrarium](./images/terrarium-final.png)
 
 To complete the post-lecture quiz, go through this Learn module: [Style your HTML app with CSS](https://docs.microsoft.com/learn/modules/build-simple-website/4-css-basics/?WT.mc_id=academic-77807-sagibbon)
-
-## Post-Lecture Quiz
-
-[Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/18)
 
 ## Review & Self Study
 

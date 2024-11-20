@@ -15,4 +15,4 @@ In this project, you'll learn how to build a fictional bank. These lessons inclu
 
 ### Assignment
 
-These are features in your solution project so document how you you implemented the assignment task, the issues you faced and how did you fix them (in solution.md). You can include screenshots of that feature as well.
+These are features in your solution project so document how you implemented the assignment task (in solution.md). You can include screenshots/video of that feature as well.

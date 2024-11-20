@@ -1,7 +1,5 @@
 # Terrarium Project Part 1: Introduction to HTML
 
-## Pre-Lecture Quiz
-
 > Check out video
 
 > 
@@ -106,7 +104,7 @@ Now, you can start building out your page. Normally, you use `<div>` tags to cre
 
 One html tag that doesn't need a closing tag is the `<img>` tag, because it has a `src` element that contains all the information the page needs to render the item.
 
-Create a folder in your app called `images` and in that, add all the images in the [source code folder](../solution/images); (there are 14 images of plants).
+Create a folder in your app called `images` and in that, add all the images in the [source code folder](./images); (there are 14 images of plants).
 
 ### Task
 
@@ -214,10 +212,6 @@ Add this markup above the last `</div>` tag:
 ## 🚀Challenge
 
 There are some wild 'older' tags in HTML that are still fun to play with, though you shouldn't use deprecated tags such as [these tags](https://developer.mozilla.org/docs/Web/HTML/Element#Obsolete_and_deprecated_elements) in your markup. Still, can you use the old `<marquee>` tag to make the h1 title scroll horizontally? (if you do, don't forget to remove it afterwards)
-
-## Post-Lecture Quiz
-
-[Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/16)
 
 ## Review & Self Study
 

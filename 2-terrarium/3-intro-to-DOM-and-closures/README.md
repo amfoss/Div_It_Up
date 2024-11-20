@@ -1,9 +1,5 @@
 # Terrarium Project Part 3: DOM Manipulation and a Closure
 
-## Pre-Lecture Quiz
-
-[Pre-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/19)
-
 ### Introduction
 
 Manipulating the DOM, or the "Document Object Model", is a key aspect of web development. According to [MDN](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction), "The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web." The challenges around DOM manipulation on the web have often been the impetus behind using JavaScript frameworks instead of vanilla JavaScript to manage the DOM, but we will manage on our own!
@@ -195,10 +191,6 @@ Now you have completed your project!
 ## 🚀Challenge
 
 Add new event handler to your closure to do something more to the plants; for example, double-click a plant to bring it to the front. Get creative!
-
-## Post-Lecture Quiz
-
-[Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/20)
 
 ## Review & Self Study
 

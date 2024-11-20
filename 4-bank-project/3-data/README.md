@@ -1,9 +1,5 @@
 # Build a Banking App Part 3: Methods of Fetching and Using Data
 
-## Pre-Lecture Quiz
-
-[Pre-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/45)
-
 ### Introduction
 
 At the core of every web application there's *data*. Data can take many forms, but its main purpose is always to display information to the user. With web apps becoming increasingly interactive and complex, how the user accesses and interacts with information is now a key part of web development.
@@ -324,10 +320,6 @@ Work together to make the dashboard page look like a real banking app. If you al
 Here's an example of a styled dashboard page:
 
 ![Screenshot of an example result of the dashboard after styling](../images/screen2.png)
-
-## Post-Lecture Quiz
-
-[Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/46)
 
 ## Assignment
 

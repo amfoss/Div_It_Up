@@ -1,9 +1,5 @@
 # Build a Banking App Part 4: Concepts of State Management
 
-## Pre-Lecture Quiz
-
-[Pre-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/47)
-
 ### Introduction
 
 As a web application grows, it becomes a challenge to keep track of all data flows. Which code gets the data, what page consumes it, where and when does it need to be updated...it's easy to end up with messy code that's difficult to maintain. This is especially true when you need to share data among different pages of your app, for example user data. The concept of *state management* has always existed in all kinds of programs, but as web apps keep growing in complexity it's now a key point to think about during development.
@@ -267,10 +263,6 @@ Try reloading the dashboard now, it should display the updated account data.
 Now that we reload the account data every time the dashboard is loaded, do you think we still need to persist *all the account* data?
 
 Try working together to change what is saved and loaded from `localStorage` to only include what is absolutely required for the app to work.
-
-## Post-Lecture Quiz
-
-[Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/48)
 
 ## Assignment
 

@@ -1,9 +1,5 @@
 # Build a Banking App Part 2: Build a Login and Registration Form
 
-## Pre-Lecture Quiz
-
-[Pre-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/43)
-
 ### Introduction
 
 In almost all modern web apps, you can create an account to have your own private space. As multiple users can access a web app at the same time, you need a mechanism to store each user personal data separately and select which information to display information. We won't cover how to manage [user identity securely](https://en.wikipedia.org/wiki/Authentication) as it's an extensive topic on its own, but we'll make sure each user is able to create one (or more) bank account on our app.
@@ -287,10 +283,6 @@ Show an error message in the HTML if the user already exists.
 Here's an example of what the final login page can look like after a bit of styling:
 
 ![Screenshot of the login page after adding CSS styles](./images/result.png)
-
-## Post-Lecture Quiz
-
-[Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/44)
 
 ## Review & Self Study
 
