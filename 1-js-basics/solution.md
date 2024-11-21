@@ -116,13 +116,13 @@ Functions are standalone blocks in javascript whereas methods are functions that
 associated with objects and depict their properties.
 ```
 
-3. Sub Topic 3 - making decisions
+# Sub Topic 3 - making decisions
 ## Assignment : Operators
 ### Instructions : 
 Play around with operators. Here's a suggestion for a program you can implement:
 You have a set of students from two different grading systems.
 
-## Solution :
+### Solution :
 ```js
 let allStudents = ['A', 'B-', 1, 4, 5, 2];
 let studentsWhoPass = [];
@@ -140,7 +140,7 @@ for (let grade of allStudents) {
 console.log(studentsWhoPass);
 ```
 ## Challenge :
-- Create a program that is written first with logical operators, and then 
+Create a program that is written first with logical operators, and then 
 rewrite it using a ternary expression. What's your preferred syntax?
 ```js
 function checkSleepTime(taskGoal, tasksDone){
@@ -167,7 +167,34 @@ function checkSleepTime(taskGoal, tasksDone){
   } 
 }
 ```
-4. Sub Topic 4 - arrays, loops
-## Assignment : 
-## Instructions : 
-## Solution : 
+# Sub Topic 4 - arrays, loops
+## Assignment : Loop an Array	 
+### Instructions : 
+Create a program that lists every 3rd number between 1-20 and prints it to the console.
+TIP: use a for-loop and modify the iteration-expression
+### Solution : 
+```js
+for(let i = 2; i < 20; i += 3){
+    console.log(i+1);
+}
+```
+
+## Challenge :
+1. forEach
+```js
+const array1 = [1,2,3,4,5,6];
+array.forEach((element) => console.log(element));
+```
+2. for of
+```js
+const array = [1,2,3,4,5,6];
+for (const element of array) {
+  console.log(element);
+}
+```
+3. map
+```js
+const array = [1,2,3,4,5,6];
+const mapped = array.map((x) => x);
+console.log(mapped);
+```
