@@ -1,23 +1,3 @@
-0. Submission Structure
-
-    Assignment:
-
-        ```
-        Solution / Documentation of the
-        Assignment
-        ```
-
-    Challenge:
-
-        ```
-        Your Solution / Documentation
-        for the challenge given.
-        Should include your code solution 
-        and inference according to the challenge.
-        ```
-
-
-
 # Sub Topic 1 - data types
 
 ## Assignment : Data Types Practice
