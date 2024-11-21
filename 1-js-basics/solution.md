@@ -80,28 +80,28 @@ d. floating-point nos: 0.4 + 0.59 === 0.99 (false)-> floating point nos are depi
 
 ### Instructions : 
 Create different functions, both functions that return something and functions that don't return anything.
-
 See if you can create a function that has a mix of parameters and parameters with default values.
+
 ### Solution :
 
 1. Function that returns something : 
-```
+```js
 function twoSum(a, b) {
   return a + b;
 }
 console.log(twoSum(2,4)); // output : 6
 ```
 2. Function that doesn't return anything :
-```
+```js
 function greetUser(name) {
   console.log(`Hello, ${name}!`);
 }
 console.log(greetUser("Aakash")); // output : Hello, Aakash!
 ```
 3. Function with mix of parameters : 
-```
+```js
 function examEligibility(totalClasses, classesAttended, subject, name, success = 'Congrats', failure = 'Sorry'){
-  percentage = (classesAttended/totalClasses)*100;
+  const percentage = (classesAttended/totalClasses)*100;
   if (percentage > 75){
     console.log('${success} ${name}, you're eligible for the ${subject} exam!');
   }
@@ -117,12 +117,56 @@ associated with objects and depict their properties.
 ```
 
 3. Sub Topic 3 - making decisions
-## Assignment : 
-## Instructions : 
+## Assignment : Operators
+### Instructions : 
+Play around with operators. Here's a suggestion for a program you can implement:
+You have a set of students from two different grading systems.
+
 ## Solution :
+```js
+let allStudents = ['A', 'B-', 1, 4, 5, 2];
+let studentsWhoPass = [];
 
+for (let grade of allStudents) {
+    if (typeof grade === 'string') {
+        if (['A', 'A-', 'B', 'B-', 'C'].includes(grade)) {
+            studentsWhoPass.push(grade);
+        }
+    } else if (typeof grade === 'number' && [3, 4, 5].includes(grade)) {
+        studentsWhoPass.push(grade);
+    }
+}
 
+console.log(studentsWhoPass);
+```
+## Challenge :
+- Create a program that is written first with logical operators, and then 
+rewrite it using a ternary expression. What's your preferred syntax?
+```js
+function checkSleepTime(taskGoal, tasksDone){
+  if (tasksDone >= taskGoal){
+    console.log('Congrats you can sleep now'); 
+  }
+  else {
+    console.log('You may not sleep now, acheive the target first');
+  }
+}
+```
+```js
+function checkSleepTime(taskGoal, tasksDone){
 
+  let permissionGranted = 'Well done, you can sleep now :)';
+  let permissionDenied = 'You must complete the tasks before sleeping .\/.'
+
+  switch(tasksDone >= taskGoal){
+
+    case true:
+      return permissionGranted;
+    case false:
+      return permissionDenied;
+  } 
+}
+```
 4. Sub Topic 4 - arrays, loops
 ## Assignment : 
 ## Instructions : 
