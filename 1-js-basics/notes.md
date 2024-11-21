@@ -22,7 +22,11 @@ formatting, a plain string is more concise.
        let age = 20;
        let intro = `Hello, my name is ${name} and my age is ${age}.`
  ```
-
+## Functions in Javascript
+- No matter when you define a function - before/after call, javascript finds it for you.
+- Methods : are a special type of function, usually associated with objects
+- camelCasing : naming standard
+- use descriptive names always
 
 
 
