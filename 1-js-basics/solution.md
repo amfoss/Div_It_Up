@@ -21,10 +21,13 @@
 # Sub Topic 1 - data types
 
 ## Assignment : Data Types Practice
+
+### Instructions :
 ```
-- Instructions :
 Imagine you are building a shopping cart. Write some documentation on the data types that you would need to complete your shopping experience. How did you arrive at your choices?
+```
 ### Solution :
+```
 - Components associated with the cart : cart itself, user, product.
 - Cart : 
 1) size : number -> total items in the car
@@ -74,25 +77,29 @@ d. floating-point nos: 0.4 + 0.59 === 0.99 (false)-> floating point nos are depi
 
 # Sub Topic 2 - functions, methods
 ## Assignment : Fun with Functions
-```
-- Instructions : 
+
+### Instructions : 
 Create different functions, both functions that return something and functions that don't return anything.
 
 See if you can create a function that has a mix of parameters and parameters with default values.
 ### Solution :
+
 1. Function that returns something : 
+```
 function twoSum(a, b) {
   return a + b;
 }
 console.log(twoSum(2,4)); // output : 6
-
+```
 2. Function that doesn't return anything :
+```
 function greetUser(name) {
   console.log(`Hello, ${name}!`);
 }
 console.log(greetUser("Aakash")); // output : Hello, Aakash!
-
+```
 3. Function with mix of parameters : 
+```
 function examEligibility(totalClasses, classesAttended, subject, name, success = 'Congrats', failure = 'Sorry'){
   percentage = (classesAttended/totalClasses)*100;
   if (percentage > 75){
@@ -102,8 +109,6 @@ function examEligibility(totalClasses, classesAttended, subject, name, success =
     console.log('${failure} ${name} you can't attend the ${subject} exam :(');
   }
 }
-
-4. Function 
 ```
 ## Challenge : 
 ```
