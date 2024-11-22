@@ -138,3 +138,6 @@ h1 {
 	bottom: 46%;
 }
 ```
+
+'/home/sreejith-m/Pictures/Screenshots/Screenshot from 2024-11-23 00-15-36.png' 
+'/home/sreejith-m/Pictures/Screenshots/Screenshot from 2024-11-23 00-15-51.png' 
