@@ -3,7 +3,7 @@
 ---
 ---
 
-1. Subtopic 1 - data-types
+## 1. Subtopic 1 - data-types
 ---
 ### Challenge  
 let age = 1; let Age = 2; age == Age (resolves false -- why?). What other gotchas can you find?
@@ -58,7 +58,7 @@ Exercise Done : **Get URL and URL Parts in JavaScript**
 ---
 ---
 
-2. Subtopic 2 - Functions-Methods
+## 2. Subtopic 2 - Functions-Methods
 ---
 ### Challenge
 Can you articulate in one sentence the difference between functions and methods? Give it a try!
@@ -127,7 +127,7 @@ Both will return the output 106.
 ---
 ---
 
-3. Subtopic 3 - making-decisions
+## 3. Subtopic 3 - making-decisions
 ---
 ### Challenge
 Create a program that is written first with logical operators, and then rewrite it using a ternary expression. What's your preferred syntax?
@@ -173,7 +173,7 @@ console.log("Students who Passed : "+studentsWhoPass)
 ---
 ---
 
-4. Subtopic 4 - arrays-loops
+## 4. Subtopic 4 - arrays-loops
 ---
 ### Challenge 
 There are other ways of looping over arrays other than for and while loops. There are forEach, for-of, and map. Rewrite your array loop using one of these techniques
