@@ -1,0 +1,47 @@
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    margin: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 1% 1% 1% 1%;   
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+input {
+    margin: auto;
+    border-color: azure;
+    height: 30px;
+    width: 98%;
+}
+
+button {
+    width: 80%;
+    border-radius: 10px;
+    height: 40px;
+    width: 98%;
+    background-color:#d6eaf8;
+    border: 1px solid black;
+}
+button:hover{
+    background-color: #a3e4d7;
+}
+#credits-link{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color:black;
+    font-size: x-large;
+    font: bolder;
+}
