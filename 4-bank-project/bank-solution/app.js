@@ -66,19 +66,9 @@ async function register() {
     console.log('Account created!', result);
     updateState('account', result);
     navigate('/dashboard');
-    console.log('Dashboard is shown')
 }
 async function createAccount(account) {
-    try {
-        const response = await fetch(URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: account
-        });
-        return await response.json();
-    } catch (error) {
-        return { error: error.message || 'Unknown error' };
-    }
+    return sendrequest(URL, 'POST', account)
 }
 
 window.onpopstate = () => updateRoute();
@@ -98,27 +88,21 @@ async function login() {
     console.log('Dashboard is shown')
 }
 
-// async function sendrequest(api, method='GET', body=null){
-//     try {
-//         const options = {
-//             method,
-//             headers: { 'Content-Type': 'application/json' },
-//             body : body ? body : null
-//         };
-//         const response = await fetch(url, options);
-//         return await response.json();
-//     } catch (error) {
-//         return { error: error.message || 'Unknown error' };
-//     }
-// }
-
-async function getAccount(user) {
+async function sendrequest(api, method='GET', body){
     try {
-        const response = await fetch(URL + encodeURIComponent(user));
+        const response = await fetch(api, {
+            method,
+            headers: body ? { 'Content-Type': 'application/json' } : undefined,
+            body
+        });
         return await response.json();
     } catch (error) {
         return { error: error.message || 'Unknown error' };
     }
+}
+
+async function getAccount(user) {
+    return sendrequest(URL + encodeURIComponent(user))
 }
 
 function updateElement(id, textOrNode) {
@@ -166,7 +150,6 @@ function logout() {
     navigate('/login');
 }
 
-// Initialization
 
 function init() {
     const savedAccount = localStorage.getItem(storageKey);
@@ -199,3 +182,34 @@ async function refresh() {
     await updateAccountData();
     updateDashboard();
 }
+
+function showDialogBox(){
+    console.log("clicked")
+    box = document.getElementById('dialogbox')
+    box.style.visibility = "visible";
+}
+
+async function addTransaction() {
+    const dialogbox = document.getElementById('dialogbox');
+    
+    dialogbox.classList.remove('show');
+  
+    const transactionForm = document.getElementById('transactionForm');
+    const formData = new FormData(transactionForm);
+    const jsonData = JSON.stringify(Object.fromEntries(formData));
+
+    try {
+        const data = await sendrequest(`${URL}${encodeURIComponent(state.account.user)}/transactions`, 'POST', jsonData);
+        if (data.error) {
+            updateElement('transactionError', data.error);
+            return;
+        }
+        await updateAccountData();
+        updateDashboard();
+    } catch (error) {
+        updateElement('transactionError', 'An error occurred while processing the transaction.');
+        console.error(error);
+    }
+}
+
+

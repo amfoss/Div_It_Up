@@ -26,7 +26,7 @@ input {
     width: 98%;
 }
 
-button {
+.box button {
     width: 80%;
     border-radius: 10px;
     height: 40px;
@@ -34,9 +34,7 @@ button {
     background-color:#d6eaf8;
     border: 1px solid black;
 }
-button:hover{
-    background-color: #a3e4d7;
-}
+
 #credits-link{
     display: block;
     margin-top: 20px;
@@ -44,4 +42,24 @@ button:hover{
     color:black;
     font-size: x-large;
     font: bolder;
+}
+
+.dashboard-buttons button {
+    background-color: #d6eaf8;
+    padding-top: 5px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #a3e4d7;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    visibility: hidden;
 }

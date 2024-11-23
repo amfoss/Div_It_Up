@@ -38,10 +38,8 @@
                 <input id="description" name="description" type="text" maxlength="100">
                 <label for="balance">Current balance</label>
                 <input id="balance" name="balance" type="number" value="0">
-                <button>
-                    <span style="font-weight:bold; font-size: medium;">Register</span>
-                </button>
-                            </form>
+                <button style="font-weight:bold; font-size: medium;">Register</button>
+            </form>
         </div>
         <a href="/credits" onclick="onLinkClick(event)" id="credits-link">credits</a>
     </template>
@@ -50,7 +48,7 @@
         <title>Dashboard</title>
         <header>
             <h1>Bank App</h1>
-            <a href="/login" onclick="onLinkClick(event)">Logout</a>
+
         </header>
         <section>
             Balance: <span id="balance"></span><span id="currency"></span>
@@ -68,6 +66,25 @@
                 </thead>
                 <tbody id="transactions"></tbody>
             </table>
+        </section>
+
+        <section class="dashboard-buttons">
+            <button style="font-weight:bold; font-size: medium;" onclick="showDialogBox()">Add transaction</button>
+            <!-- <button style="font-weight:bold; font-size: medium;" href="/login" onclick="onLinkClick(event)">Logout</button> -->
+            <button style="font-weight:bold; font-size: medium;" onclick="logout()">Logout</button>
+            <dialog open id="dialogbox">
+                    <form id="transactionForm">
+                        <label for="date">Date</label>
+                        <input id="date" name="date" type="date">
+                        <label for="object">Object</label>
+                        <input id="object" name="object" type="text">
+                        <label for="amount">Amount</label>
+                        <input id="amount" name="amount" type="number">
+                        <button style="font-weight: bold; font-size: medium;" onclick="addTransaction()">Add</button>
+                    </form>
+            </dialog>
+
+
         </section>
     </template>
 
