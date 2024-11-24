@@ -1,0 +1,104 @@
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #3a241d;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.container {
+    background-color: #eee;
+    width: 15%;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+}
+
+#left-container{
+    left: 0px;
+}
+
+#right-container {
+	right: 0px;
+}
+
+.plant-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.plant{
+    position: absolute; /* it should always be contained in the plant holder*/
+    max-width: 150%;
+    max-height: 120%;
+	z-index: 2; /* plant is on the plant-holder */
+}
+
+.jar-walls{
+    height: 75%;
+    width: 60%;
+    background: #d1e1df;
+	  border-radius: 5rem 5rem 3rem 3rem;
+	  position: absolute;
+    bottom: 5%;
+    z-index: 1;
+    text-align: center;
+    left: 20%;
+    opacity: 0.5;
+}
+
+.jar-glossy-long{
+    left:5%;
+    top: 70%;
+    background-color: #e6f8f5;
+    position: relative;
+    width:3%;
+    height:15%;
+    border-radius: 10px;
+}
+
+.jar-glossy-short{
+    left:5%;
+    top: 47%;
+    background-color: #e6f8f5;
+    position: relative;
+    width:3%;
+    height:5%;
+    border-radius: 10px;
+}
+
+.jar-top{
+    background: #d1e1df;
+    height: 5%;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 80%;
+    z-index: 1;
+    opacity: 0.7;
+    border-radius: 5%;
+}
+.jar-bottom {
+	background: #d1e1df;
+    height: 1%;
+    width: 50%;
+    bottom: 4%;
+    left: 25%;
+    position: absolute;
+}
+
+.dirt{
+    background: #3a241d;
+    height: 5%;
+    width: 60%;
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    z-index: 2;
+    border-radius: 0 0 3rem 3rem;
+    opacity: 0.5;
+}

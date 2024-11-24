@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #3a241d;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eee;
+    width: 15%;
+    height: 100%;
+    padding: 10px;
+}
+
+.plant-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13%;
+    width: 100%;
+}
+
+.plant {
+    max-width: 150%;
+    max-height: 120%;
+    z-index: 2;
+}
+
+#terrarium {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+    height: 75%;
+    margin: 0 auto;
+}
+
+.jar-walls {
+    height: 100%;
+    width: 100%;
+    background: #d1e1df;
+    border-radius: 5rem 5rem 3rem 3rem;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.jar-glossy-long,
+.jar-glossy-short {
+    background-color: #e6f8f5;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.jar-glossy-long {
+    width: 3%;
+    height: 15%;
+    left: 5%;
+    top: 70%;
+}
+
+.jar-glossy-short {
+    width: 3%;
+    height: 5%;
+    left: 5%;
+    top: 47%;
+}
+
+.jar-top {
+    background: #d1e1df;
+    height: 5%;
+    right: 5rem;
+    position: absolute;
+    left: 5rem;
+    top: -5%;
+    z-index: 1;
+    opacity: 0.7;
+    border-radius: 5%;
+}
+
+.jar-bottom {
+    background: #d1e1df;
+    height: 1%;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.dirt {
+    background: #3a241d;
+    height: 5%;
+    width: 100%;
+    border-radius: 0 0 3rem 3rem;
+    z-index: 2;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+}
