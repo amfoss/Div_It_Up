@@ -1,0 +1,27 @@
+.highlight {
+    background-color: yellow;
+  }
+  
+  .error {
+    background-color: lightcoral;
+    border: red;
+  }
+  .sep{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 500px;
+    border: 1px solid black;
+  }
+  .box {
+    width: 500px;
+    background-color: lightgreen;
+    height: 170px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+  }
+  .x{
+    margin-left: 480px;
+  }
+  

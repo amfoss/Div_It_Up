@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="./style.css" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Bank App</title>
+  </head>
+
+
+
+
+
+  <body>
+    <div id="app">Loading...</div>
+
+
+    <template id="transaction">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+  </body>
+  <template id="login">
+    <div id="LoginMenu">
+      <img src="https://github.com/user-attachments/assets/204ff83d-4f51-41a7-98e5-a810e5eb318c" height="150px" width="150px">
+      <h1 id="H1">Your Pefect Banking Partner!</h1>
+      <section>
+        <h2>Login</h2>
+        <form id="loginForm" action="javascript:login()">
+          <label for="username">Username</label>
+          <input id="username" name="user" type="text">
+          <div id="loginError" role="alert" style="color: red;"></div>
+          <button>Login</button>
+        </form>
+      </section>
+    <h2 id="H1">Or</h2>
+    <h2 >Register</h2>
+    <form id="registerForm" action="javascript:register()">
+      <label for="user">Username (required)</label>
+      <input id="user" name="user" type="text" maxlength="20" required class="inputLogin">
+      <label for="currency">Currency (required)</label>
+      <input id="currency" name="currency" type="text" value="$" maxlength="5" required class="inputLogin">
+      <label for="description">Description</label>
+      <input id="description" name="description" type="text" maxlength="100" class="inputLogin">
+      <label for="balance">Current balance</label>
+      <input id="balance" name="balance" type="number" value="0" class="inputLogin">
+      <button class="inputLogin" style="margin-top: 20px;">Register</button>
+    </form>
+    </div>
+</template>
+  <template id="dashboard">
+    <div id="DashboardMenu">
+      <header>
+        <h1 id="H1">Bank App</h1>
+        <a href="/login" onclick="onLinkClick(event)">Logout</a>
+        <a href="/credits" onclick="onLinkClick(event)">Credits</a>
+      </header>
+      <section>
+        Balance: <span id="balance"></span><span id="currency"></span>
+      </section>
+      <h2 id="description"></h2>
+
+    <!--Assignment 4-->
+    <form id="popup-box" class="modal" style="visibility: hidden;" onsubmit="AddNewTransaction(event)">
+      <h1 style="background-color: rgba(0, 204, 255, 0.7);margin-top: 0px;">Add Transaction</h1>
+      <input type="date" name="date" id="new_date" placeholder="DD/MM/YYYY" required>
+      <input name="object" id="new_object" placeholder="Object" required>
+      <input type="number" name="amount" id="new_amount" placeholder="Amount" required>
+      <div style="margin-bottom: 20px;">
+        <button type="submit">Ok</button>
+        <button type="button" onclick="TogglePopup()">Cancel</button>
+      </div>
+    </form>
+    
+      </form>
+
+
+
+
+      
+      <section>
+        <div style="display: flex; flex-direction: row; align-items: center;">
+          <h2>Transactions</h2>
+          <button style="border-radius: 5px; background-color: rgba(0, 204, 255, 0.7); margin-left: auto;" id="addtrans" onclick="TogglePopup()">Add Transactions</button>
+        </div>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Object</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody id="transactions"></tbody>
+        </table>
+      </section>
+    </div>
+  </template>
+
+
+
+  <template id="transaction">
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </template>
+
+
+    <!--Challenge 1-->
+    <template id="credits">
+      <header>
+        <h1>Credits</h1>
+      </header>
+      <a href="/login" onclick="onLinkClick(event)" >Logout</a>
+      <a href="/dashboard" onclick="onLinkClick(event)" >Dashboard</a>
+      <h2>This App was made by:</h2>
+      <p>Name<br>Name2<br>Name3</p>
+    </template>
+      <!-- end -->
+
+
+
+  <script src="app.js" defer></script>
+</html>

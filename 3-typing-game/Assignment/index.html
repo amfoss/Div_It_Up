@@ -1,0 +1,46 @@
+<!-- inside index.html -->
+<html>
+<head>
+  <title>Guess the Text</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <ls class="NumBox">
+    <ol class="Numbox">
+      <ls class="nums">
+        <H1 id="Num1">-</H1>
+      </ls>
+      <ls class="nums">
+        <H1 id="Num2">-</H1>
+      </ls>
+      <ls class="nums">
+        <H1 id="Num3">-</H1>
+      </ls>
+      <ls class="nums">
+        <H1 id="Num4">-</H1>
+      </ls>
+    </ol>
+    <div style="width: 10%;"></div>
+    <h1>How to Play:</h1>
+    <p >How to Play:
+      In this game, your objective is to find the hidden number based on the clues provided for your previous guess. <br>
+      There are three types of clues: <br>
+      <strong>Red</strong> digits indicate the number of digits in your guess that are in the<strong> correct position </strong>and have the correct value. <br>
+      <strong>Yellow</strong> digits show how many digits are present in the hidden number but are in the <strong>wrong position</strong>. <br>
+      <strong>Green</strong> digits represent the number of digits in your guess that are <strong>repeated</strong> in the hidden number. <br>
+      Use these clues to narrow down your guesses and discover the hidden number!<br>
+  </p>
+  </ls>
+  <h1>Your Guess:</h1>
+  <input style="margin-left: 65px;" type="text" placeholder="Enter your Guess:" class="box" id="guess" maxlength="4">
+  <button style="visibility: hidden;" id="rs">Restart?</button>
+  <h1 id="psh">Previous Guesses:</h1>
+  <ol class="PrevGuess" id="ps">
+
+  </ol>
+  <script src="script.js"></script>
+
+</body>
+</html>
