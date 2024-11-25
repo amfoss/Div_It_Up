@@ -1,0 +1,65 @@
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    margin: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 1% 1% 1% 1%;   
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+input {
+    margin: auto;
+    border-color: azure;
+    height: 30px;
+    width: 98%;
+}
+
+.box button {
+    width: 80%;
+    border-radius: 10px;
+    height: 40px;
+    width: 98%;
+    background-color:#d6eaf8;
+    border: 1px solid black;
+}
+
+#credits-link{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color:black;
+    font-size: x-large;
+    font: bolder;
+}
+
+.dashboard-buttons button {
+    background-color: #d6eaf8;
+    padding-top: 5px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #a3e4d7;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    visibility: hidden;
+}
