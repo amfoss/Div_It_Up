@@ -1,0 +1,104 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+#forms {
+max-width: 700px;
+width: 100%;
+background-color: #fff;
+padding: 25px 30px;
+border-radius: 5px;
+box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.title {
+font-size: 25px;
+font-weight: bold;
+position: relative;
+margin-bottom: 20px;
+}
+
+header{
+    position: absolute;
+    top:3px;
+}
+
+
+
+
+.footer{
+  height:40px;
+}
+
+#add h1{
+  text-align: centre;
+  color:hsl(233, 52%, 33%);
+  font-weight: bolder;
+}
+
+#dialogue{
+  background-color: #fff;
+  border-radius: 10px;
+  width:40%;
+  min-width: 300px;
+  
+}
+
+#tranbutton{
+  height:45px;
+  border-color: black;
+  background-color: #0076CE;
+  border-radius: 5px;
+  font:bolder;
+}
+
+@media (orientation: landscape) {
+    #table {
+      width: 400px;
+      background-color: #fff;
+      padding: 25px 30px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    #btable {
+      background-color: #3d49a3;
+      width: 100%;
+      padding: 25px 30px;
+      border-radius: 5px;
+    }
+}
+
+@media (orientation: portrait) {
+  #table {
+    width: 200px;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    display: block;
+  }
+
+  #table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+  }
+  
+
+  #table td {
+    padding: 5px 0; 
+  }
+
+  #btable {
+    background-color: #3d49a3;
+    width: 200px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: block;
+  }
+}

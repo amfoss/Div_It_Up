@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bank App</title>
+  </head>
+  <body>
+    <!-- This is where you'll work -->
+    <div id="app">Loading...</div>
+    <template id="login">
+      <header>
+      <h1>Bank App</h1>
+      <section>
+        <p>Do you want to log in? <a href="/dashboard" onclick="onLinkClick(event)">Login <br> </a></p>
+        <p></p>
+        <p>Head over to credits? <a href="/credit" onclick="onLinkClick(event)">credit</a></p>
+        <p></p>
+      </section>
+      </header>
+      <section id="forms">
+        <h2 class="title">Login</h2>
+        <form id="loginForm" action="javascript:login()">
+          <label for="username">Username</label>
+          <input id="username" name="user" type="text">
+          <div id="loginError" style="color:red" role="alert"></div>
+          <button>Login</button>
+        </form>
+        <hr/>
+        <h2 class="title">Register</h2>
+        <form id="registerForm" action="javascript:register()">
+          <label for="user">Username (required)<br></label>
+          <input id="user" name="user" type="text" maxlength="20" required>
+          <label for="currency"><br>Currency (required)<br></label>
+          <input id="currency" name="currency" type="text" value="$" maxlength="5" required>
+          <label for="description"><br>Description <br></label>
+          <input id="description" name="description" type="text" maxlength="100">
+          <label for="balance"><br>Current balance<br></label>
+          <input id="balance" name="balance" type="number" value="0">
+          <div id="registererror" style="color: red;" role="alert"></div>
+          <button style="background-color:rgb(62, 105, 153);">Register</button>
+        </form>
+      </section>
+    </template>
+    
+    <template id="credit">
+      <h1>Credit</h1>
+      <p></p>
+      <p></p>
+      <p style="color:red;">All rights reserved for AadarshM07@AMFOSS.</p>
+      
+    </template>
+
+    <template id="dashboard">
+      <header>
+        <h1>Bank App</h1>
+        <a href="/login" onclick="onLinkClick(event)">Logout</a>
+      </header>
+      <dialog id="dialogue" hidden="hidden" open>
+        <h1 >ADD TRANSACTION </h1>
+
+        <form id="transactionform" >
+        <label for="date">Date<br></label>
+        <input id="date" name="date" type="date"  required>
+        <p></p>
+        <label for="object"><br>Object<br></label>
+        <input id="object" name="object" type="text"  required>
+        <p></p>
+        <label for="amount"><br>Amount<br></label>
+        <input id="amount" name="amount" type="number"  required>
+        <p></p>
+        <button id="backward" class="footer" style="background-color: red;" onclick="closedialogue()">CANCEL</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="forward" class="footer" formaction="javascript:transact()" style="background-color: rgb(39, 105, 247);">OK</button>
+        </form>
+
+      </dialog>
+      <section id="btable">
+        Balance: <span id="balance"></span><span id="currency"></span>
+      </section>
+      <h2 id="description"></h2>
+      <section id="table">
+        <h2>Transactions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <button id="tranbutton" type="button" onclick="button()">Add Transactions</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+              <th>Object&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+              <th>Amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+              <hr>
+            </tr>
+            <hr>
+          </thead>
+          <tbody id="transactions"></tbody>
+        </table>
+      </section>
+    </template>
+    <template id="transaction">
+      
+      <tr>
+        <td>fff</td>
+        <td>fff</td>
+        <td>fff</td>
+      </tr>
+    </template>
+  </body>
+</html>
