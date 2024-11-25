@@ -1,0 +1,111 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+h1 {
+	color: #3a241d;
+	text-align: center;
+}
+#left-container {
+	background-color: #eee;
+	width: 15%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+#right-container {
+	background-color: #eee;
+	width: 15%;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+.plant-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.plant {
+	position: absolute;
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
+}
+.jar-walls {
+	height: 80%;
+	width: 60%;
+	background: #d1e1df;
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 0.5%;
+	left: 20%;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.jar-top {
+	width: 50%;
+	height: 5%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 80.5%;
+	left: 25%;
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.jar-bottom {
+	width: 50%;
+	height: 1%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 0%;
+	left: 25%;
+	opacity: 0.7;
+}
+
+.dirt {
+	width: 60%;
+	height: 5%;
+	background: #3a241d;
+	position: absolute;
+	border-radius: 0 0 1rem 1rem;
+	bottom: 1%;
+	left: 20%;
+	opacity: 0.7;
+	z-index: -1;
+}
+.jar-glossy-long,
+.jar-glossy-short {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4); 
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); 
+    opacity: 0.6;
+    z-index: 2; 
+}
+
+.jar-glossy-long {
+    width: 10%;
+    height: 30%;
+    bottom: 10%; 
+    left: 15%;
+}
+.jar-glossy-short {
+    width: 5%;
+    height: 15%;
+    bottom: 5%; 
+    left: 20%; 
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
