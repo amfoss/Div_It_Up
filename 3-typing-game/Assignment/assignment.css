@@ -1,0 +1,65 @@
+#main { 
+    width: 100px; 
+    height: 50px; 
+    border: solid black 4px; 
+    width: 468px;
+    height: 482px;
+    position: relative;
+    left:30px;
+    top:100px;
+    
+}
+
+.block {
+     float:left;
+     border: solid black 2px;
+     width: 74px;
+     height:65px;
+     
+     background-color: crimson;
+}
+
+
+
+.block p {
+    pointer-events: none;
+    text-align: center;
+    font-weight:bolder;
+    font-size: 27px;
+    color:crimson
+
+}
+
+.rules{
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 550px;
+    bottom: 420px;
+    color:gold
+
+}
+
+#board{
+    
+    color:greenyellow;
+    font-weight:bold;
+    font-size: 25px;
+
+}
+#score{
+    font-weight: bold;
+    color:white;
+}
+
+#congrat{
+    border-width: 8px;
+    background-color: orange;
+    border-color: black;
+}
+
+#congo{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color:green;
+}
