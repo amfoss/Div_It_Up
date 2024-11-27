@@ -37,9 +37,10 @@ And also added the below code in const routes
 ## 2-forms
 ### Assignment
 Done with styling the app both the login page and the dashboard page with giving a unique background colour.
-/home/harshith-rao-peechara/div-it-up/bank-solution/Images/Login.png
 
-/home/harshith-rao-peechara/div-it-up/bank-solution/Images/Dashboard.png
+![Login](https://github.com/Harshith-2208/div-it-up/blob/bank-project/bank-solution/Images/Login.png)
+
+![Dashboard](https://github.com/Harshith-2208/div-it-up/blob/bank-project/bank-solution/Images/Dashboard.png)
 
 ### Challenge
 Did the printing of error message in HTML using div tag with role as alert as shown
@@ -72,3 +73,5 @@ I have added the media queries for the table in styles.css
 ## 4- state-management
 ### Assignment
 I have added the ADD TRANSACTION dialog box in the dashboard page by adding a dailog in html adding some functions in js and stying it by css.
+
+![dailogbox](https://github.com/Harshith-2208/div-it-up/blob/bank-project/bank-solution/Images/dailogbox.png)
