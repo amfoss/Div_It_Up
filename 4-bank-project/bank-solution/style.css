@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #333;
+  padding: 20px;
+}
+
+/* App Container */
+#app {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Login and Register Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+}
+
+input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Error Message */
+#errorMessage, #loginError, #registerError {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Styles */
+#dashboard {
+  padding: 30px;
+}
+
+#description {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+#balance {
+  font-size: 2.2rem;
+  color: #27ae60;
+}
+
+#currency {
+  font-size: 1.5rem;
+  color: #7f8c8d;
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+table th {
+  background-color: #ecf0f1;
+}
+
+table td {
+  background-color: #fafafa;
+}
+
+tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+tr:hover td {
+  background-color: #f1f1f1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    align-items: center;
+  }
+
+  #app {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #dashboard {
+    padding: 20px;
+  }
+
+  #description {
+    font-size: 1.5rem;
+  }
+
+  #balance {
+    font-size: 1.8rem;
+  }
+
+  #currency {
+    font-size: 1.3rem;
+  }
+
+  table th, table td {
+    padding: 10px;
+  }
+
+  table td {
+    font-size: 0.9rem;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  input, button {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  #app {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #dashboard {
+    padding: 40px;
+  }
+
+  #description {
+    font-size: 2rem;
+  }
+
+  #balance {
+    font-size: 2.5rem;
+  }
+
+  #currency {
+    font-size: 1.8rem;
+  }
+}
+#logoutButton {
+  background-color: #f44336; /* Red color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#logoutButton:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+/* Dialog Box Overlay */
+.hidden {
+  display: none;
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#deleteTransactionSection {
+  margin-top: 20px;
+}
+
+#deleteTransactionSection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#deleteTransactionSection form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+#deleteTransactionSection input {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+#deleteTransactionSection button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <h1>Typing Game</h1>
+    <p id="quote"></p> <!-- Displays the quote -->
+    <textarea id="input" placeholder="Start typing..." rows="4"></textarea>
+    <div class="stats">
+      <p>Time: <span id="timer">0</span>s</p>
+      <p>Accuracy: <span id="accuracy">0</span>%</p>
+    </div>
+    <button id="restart">Restart</button>
+  </div>
+
+  <div id="successModal" class="hidden">
+    <div class="modal-content">
+      <h2>Success! 🎉</h2>
+      <p>Time: <span id="modalTime"></span>s</p>
+      <p>Accuracy: <span id="modalAccuracy"></span>%</p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+  <div id="overlay" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
