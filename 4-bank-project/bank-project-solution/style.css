@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(196, 196, 196));
+}
+
+.modal{
+    background-color: white;
+}
+
+
+#app{
+    height: 100%;
+    width: 100%;
+    display: flex; /* Enables flexbox on body */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center;
+}
+
+#H1 {
+    color: white;
+}
+
+.inputLogin {
+    align-self: center;
+    width: 400px;
+    height: 25px;
+}
+
+#LoginMenu{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgb(0, 204, 255), rgb(4, 168, 173));
+    width: 30%;
+    min-height: 80%;
+    border-radius: 3%;
+}
+
+
+#DashboardMenu {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgb(0, 204, 255), rgb(4, 168, 173));
+    width: 90%;
+    min-height: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    color: black;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: rgba(0, 204, 255, 0.7);
+    color: white;
+}
+
+
+#registerForm {
+    display: flex;
+    flex-direction: column;
+}
