@@ -91,7 +91,7 @@ function AddNewTransaction(event) {
 }
 
 // ----------------------------- Popup Handling -----------------------------
-//Toggles the visibility of the popup box.
+//Toggles the visibility of the popup box that is the new transaction box.
 
 function TogglePopup() {
   const popup = document.getElementById("popup-box");
