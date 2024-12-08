@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cows and bull game</title>
+
+</head>
+<body>
+    <h1>COws and bulls game</h1>
+    <p>Guess the 4-digit number. Before time completes</p>
+    <div id="timer">Time left: 300 seconds</div>
+    <input type="text" id="guess" maxlength="4" placeholder="Enter your guess" />
+    <button onclick="checkGuess()">Submit Guess</button>
+    <div id="result"></div>
+    <div id="History">
+        <h3>History</h3>
+        <ul id="historyList"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

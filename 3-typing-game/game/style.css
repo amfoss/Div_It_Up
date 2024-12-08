@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+#timer {
+    font-size: 24px;
+    color: red;
+}
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+#history {
+    margin-top: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 5px 0;
+    font-size: 16px;
+}
