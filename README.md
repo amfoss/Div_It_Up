@@ -45,17 +45,4 @@ This PR is the solution to the 'js basics'  #<issue number>
 
 ```
 
-9. **Add Label < ISSUE Number > to the PR as shown below**
-
-<div align="left">
-  <img src="./images/label.png" alt="image">
-</div>
-
-10. **Add < JATAYU000 > as the reviewer for your PR**
-
-<div align="left">
-  <img src="./images/Reviewer.png" alt="image">
-</div>
-
-
 9. **Only the best solution PR for each issue will be merged into this repository.**

@@ -1,0 +1,42 @@
+name: Apply Labels Based on PR Body
+
+on:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  label-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply Labels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Check for keywords in the PR body and apply respective labels
+          if [[ "${{ github.event.pull_request.body }}" == *"ONE"* ]]; then
+            echo "Applying label ONE"
+            curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+              -H "Content-Type: application/json" \
+              --data '{"labels": ["ONE"]}' \
+              "${{ github.api_url }}/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/labels"
+          elif [[ "${{ github.event.pull_request.body }}" == *"TWO"* ]]; then
+            echo "Applying label TWO"
+            curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+              -H "Content-Type: application/json" \
+              --data '{"labels": ["TWO"]}' \
+              "${{ github.api_url }}/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/labels"
+          elif [[ "${{ github.event.pull_request.body }}" == *"THREE"* ]]; then
+            echo "Applying label THREE"
+            curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+              -H "Content-Type: application/json" \
+              --data '{"labels": ["THREE"]}' \
+              "${{ github.api_url }}/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/labels"
+          elif [[ "${{ github.event.pull_request.body }}" == *"FOUR"* ]]; then
+            echo "Applying label FOUR"
+            curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+              -H "Content-Type: application/json" \
+              --data '{"labels": ["FOUR"]}' \
+              "${{ github.api_url }}/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/labels"
+          else
+            echo "No matching label found in PR body."
+          fi
