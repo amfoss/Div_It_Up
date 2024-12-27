@@ -153,8 +153,8 @@
 }
 ```
 ## website picture
-./images/pic1.png
-./images/pic2.png
+![](./images/pic1.png)
+![](./images/pic2.png)
 # challenge
 ## html
 ```
@@ -183,4 +183,4 @@ async function register() {
 ...
 ```
 ## website picture
-./images/pic3.png
+![](./images/pic3.png)
