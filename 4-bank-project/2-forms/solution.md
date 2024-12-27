@@ -152,10 +152,6 @@
     font-style: oblique;
 }
 ```
-## website pictures
-'/home/sreejith-m/Pictures/Screenshots/Screenshot from 2024-12-26 23-08-40.png' 
-'/home/sreejith-m/Pictures/Screenshots/Screenshot from 2024-12-27 10-51-47.png' 
-
 # challenge
 ## html
 ```
@@ -183,5 +179,3 @@ async function register() {
   console.log('Account created!', result);
 ...
 ```
-## website picture
-'/home/sreejith-m/Pictures/Screenshots/Screenshot from 2024-12-27 00-02-20.png' 
