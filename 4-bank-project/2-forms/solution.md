@@ -152,6 +152,9 @@
     font-style: oblique;
 }
 ```
+## website picture
+./images/pic1.png
+./images/pic2.png
 # challenge
 ## html
 ```
@@ -179,3 +182,5 @@ async function register() {
   console.log('Account created!', result);
 ...
 ```
+## website picture
+./images/pic3.png
