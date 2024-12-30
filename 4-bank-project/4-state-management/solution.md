@@ -1,11 +1,6 @@
 # challenge
-## javascript
-```
-...
+the app requires the data of the user to be saved in the localstorage for access to it anytime. we require all the data from username to transaction details.
 
-...
-
-```
 # assignment
 ## html
 ```
